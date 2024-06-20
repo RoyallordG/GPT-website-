@@ -1,0 +1,65 @@
+.possibility{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.possibility-img img{
+    width: 546px;
+    height: 607px;
+}
+.possibility-text{
+    margin-top: 15rem;
+}
+.first-paragraph{
+    color: var(--color-text);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.possibility-text h1{
+    margin-bottom: 2rem;
+}
+.second-paragraph{
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+.third-paragraph{
+    color: var(--tomato);
+}
+
+@media screen and (max-width: 1114px) {
+.possibility-img img{
+    width: 446px;
+    height: 507px;
+}
+.possibility-text{
+    margin-top: 10rem;
+}
+.possibility{
+    gap: 3rem;
+}
+}
+
+@media screen and (max-width: 890px) {
+.possibility-img img{
+    width: 426px;
+    height: 487px;
+}
+.possibility-text{
+    margin-top: 10rem;
+}
+.possibility{
+    gap: 3.5rem;
+}
+}
+
+@media screen and (max-width: 790px) {
+.possibility-img img{
+    width: 100%;
+    height: 100%;
+}
+.possibility-text{
+    margin-top: 2rem;
+}
+}

@@ -1,0 +1,66 @@
+/* .blog{
+    display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr); 
+gap: 2rem;
+} */
+
+.blog{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.second-column, .third-column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.second-column .article .article-container .article-text{
+display: flex;
+gap: 2rem;
+}
+
+.second-column .article .article-container .article-text .heading h1{
+font-size: 18px;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+.third-column .article .article-container .article-text{
+display: flex;
+gap: 2rem;
+}
+
+.third-column .article .article-container .article-text .heading h1{
+font-size: 18px;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1216px){
+.third-column .article .article-container .article-text{
+display: flex;
+gap: 1rem;
+}
+.second-column .article .article-container .article-text{
+display: flex;
+gap: 1rem;
+}
+}
+@media screen and (max-width: 792px){
+.blog{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.first-column .article .article-container .article-text{
+display: flex;
+gap: 2rem;
+}
+.third-column .article .article-container .article-text{
+display: flex;
+gap: 2rem;
+}
+.second-column .article .article-container .article-text{
+display: flex;
+gap: 2rem;
+}
+}
